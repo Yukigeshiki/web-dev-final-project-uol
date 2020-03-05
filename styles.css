@@ -17,7 +17,7 @@ html {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
-  background-color: #fdfdfd;
+  background-color: #f8f8f8;
 }
 
 /* -------------------------------------------------------*/
@@ -114,7 +114,6 @@ nav {
   padding: 24px 40px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 90%;
   transition: background-color 0.2s, color 0.2s;
 }
 
@@ -165,9 +164,16 @@ Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 925px) {
   .nav-items a:not(:last-child) {
     display: none;
+    font-size: 75%;
+    padding: 20px 16px;
   }
   .home {
-    margin-top: 70px;
+    margin-top: 64px;
+  }
+  .logo {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 120%;
   }
   .topnav a.icon {
     float: right;
@@ -295,8 +301,18 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 @media only screen and (max-width: 850px) {
+  .upcoming-events {
+    margin-top: 8px;
+  }
+  .event {
+    max-width: 90%;
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dadada;
+  }
   .event-details-container {
     margin-left: 0px;
+    max-width: 100%;
   }
   .description {
     margin-left: 0;
@@ -321,10 +337,9 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 .past-events p {
-  width: 250px;
   margin-bottom: 32px;
   margin-left: 0;
-  max-width: 90%;
+  max-width: 85%;
 }
 
 .map {
@@ -333,13 +348,16 @@ This class makes the topnav look good on small screens (display the links vertic
 
 @media only screen and (max-width: 500px) {
   .upcoming-events {
-    max-width: 70%;
+    max-width: 100%;
   }
   .past-events {
-    max-width: 70%;
+    margin-top: 16px;
+    max-width: 100%;
     border-left: none;
-    margin-top: 32px;
     padding-left: 8px;
+  }
+  .past-events p {
+    max-width: 90%;
   }
 }
 

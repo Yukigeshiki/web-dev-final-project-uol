@@ -154,14 +154,14 @@ nav {
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-  padding: 20px 24px;
+  padding: 24px 24px;
   color: #555;
   display: none;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
 Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 925px) {
+@media (max-width: 925px) {
   .nav-items a:not(:last-child) {
     display: none;
     font-size: 75%;
@@ -183,7 +183,7 @@ Show the link that contains should open and close the topnav (.icon) */
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
 This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 925px) {
+@media (max-width: 925px) {
   .topnav.responsive {
     position: relative;
   }
@@ -241,7 +241,7 @@ This class makes the topnav look good on small screens (display the links vertic
   object-fit: cover;
 }
 
-@media only screen and (max-width: 825px) {
+@media (max-width: 825px) {
   .slideshow-container {
     box-shadow: none;
     height: 350px;
@@ -251,7 +251,7 @@ This class makes the topnav look good on small screens (display the links vertic
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media (max-width: 400px) {
   .slideshow-container {
     height: 350px;
   }
@@ -300,7 +300,7 @@ This class makes the topnav look good on small screens (display the links vertic
   display: inline-block;
 }
 
-@media only screen and (max-width: 850px) {
+@media (max-width: 850px) {
   .upcoming-events {
     margin-top: 8px;
   }
@@ -346,7 +346,7 @@ This class makes the topnav look good on small screens (display the links vertic
   margin-left: 0;
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .upcoming-events {
     max-width: 100%;
   }
@@ -396,7 +396,7 @@ This class makes the topnav look good on small screens (display the links vertic
   margin-left: 8px;
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
   .title-link-container {
     margin-top: 32px;
     margin-left: 0;
@@ -405,6 +405,24 @@ This class makes the topnav look good on small screens (display the links vertic
   .title-link-container a {
     margin-left: 0;
   }
+}
+
+.vids-column-1 {
+  margin-left: 8px;
+  min-width: 50%;
+  float: left;
+}
+
+.vids-column-2 {
+  margin-left: 8px;
+  max-width: 50%;
+  float: left;
+}
+
+.youtube-vid {
+  margin: 24px 0;
+  width: 420px;
+  height: 315px;
 }
 
 /* -------- ICONS --------- */
@@ -522,12 +540,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .login-page {
     width: 50%;
   }
 }
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .login-page {
     width: 70%;
   }

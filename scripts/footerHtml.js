@@ -3,19 +3,19 @@ document.write(`
     <div class="row">
       <div class="contact-us">
         <h3>Contact us:</h3>
-        <p><strong>Tell: </strong> +27 00 000 0000</p>
+        <p><strong>Tel: </strong> +27 00 000 0000</p>
         <p><strong>Email: </strong> info@oddplantsucculents.com</p>
         <p>
           <strong>Address: </strong><br />
-          04 Oberon Way<br />
-          Meadowridge<br />
-          7806<br />
+          04 Fictional Way<br />
+          Fictional Suburb<br />
+          7777<br />
           Cape Town<br />
           South Africa<br />
         </p>
       </div>
       <div class="follow-us">
-        <h3>Follow us on:</h3>
+        <h3>Follow us:</h3>
         <div class="icons">
           <a
             href="https://www.instagram.com"
@@ -60,5 +60,5 @@ document.write(`
         </form>
       </div>
     </div>
-    <p class="copyright">&copy Copyright Odd Plant Succulents 2020</p>
+    <p class="copyright">&copy 2020 Odd Plant Succulents</p>
     </footer>`);

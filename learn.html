@@ -4,6 +4,9 @@
     <meta name="author" content="Laurence Sonnenberg" />
     <title>Learn</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="./scripts/articleData.js"></script>
+    <script src="./scripts/openArticle.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap"
       rel="stylesheet"
@@ -29,7 +32,11 @@
           <h3 class="article-title">
             Succulent Care Under the Hot African Sun
           </h3>
-          <a href="#" class="inline-link article-link">
+          <a
+            onclick="openArticle(articles.articleOne.title, articles.articleOne.body)"
+            href="#"
+            class="inline-link article-link"
+          >
             Read more...
           </a>
         </div>
@@ -40,7 +47,11 @@
           <h3 class="article-title">
             Winter Succulents to Make the Best of the Cold Rainy Season
           </h3>
-          <a href="#" class="inline-link article-link">
+          <a
+            onclick="openArticle(articles.articleTwo.title, articles.articleTwo.body)"
+            href="#"
+            class="inline-link article-link"
+          >
             Read more...
           </a>
         </div>

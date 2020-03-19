@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<!-- declare language in html tag -->
 <html lang="en">
   <head>
+    <!-- declare page title -->
     <title>Login</title>
+    <!-- declare meta fields -->
     <meta
       name="decription"
       content="This website is dedicated to Odd Plant Succulents and the discussion of succulent plants"
@@ -14,6 +17,7 @@
       name="keywords"
       content="'succulent plants' plants 'plant propagation' 'odd plant succulents'"
     />
+    <!-- declare links -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap"
@@ -21,17 +25,25 @@
     />
   </head>
   <body>
-    <!-- header -->
+    <!-- get script to display header -->
     <script src="scripts/headerHtml.js"></script>
 
-    <!-- credit to https://codepen.io/colorlib/pen/rxddKy for the login form -->
+    <!-- create a container for all body elements (centers elements) -->
     <div class="row">
+      <!-- credit to https://codepen.io/colorlib/pen/rxddKy for the login form -->
+      <!-- create container for login elements using div -->
       <div class="login-page">
+        <!-- create container for login form using div -->
         <div class="form">
+          <!-- create a login form using form -->
           <form class="login-form">
-            <input type="text" placeholder="username" />
+            <!-- create input for email using input -->
+            <input type="text" placeholder="email" />
+            <!-- create input for password using input -->
             <input type="password" placeholder="password" />
+            <!-- create button to login using button -->
             <button>login</button>
+            <!-- create not registered message using p and link using a -->
             <p class="message">
               Not registered? <a href="./signup.html">Create an account</a>
             </p>
@@ -39,11 +51,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      $('.message a').click(function() {
-        $('form').animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
-      });
-    </script>
   </body>
 </html>

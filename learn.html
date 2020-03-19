@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<!-- declare language in html tag -->
 <html lang="en">
   <head>
+    <!-- declare page title -->
     <title>Learn</title>
+    <!-- declare meta fields -->
     <meta
       name="decription"
       content="This website is dedicated to Odd Plant Succulents and the discussion of succulent plants"
@@ -14,21 +17,25 @@
       name="keywords"
       content="'succulent plants' plants 'plant propagation' 'odd plant succulents'"
     />
+    <!-- declare links -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- get scripts -->
     <script src="./scripts/articleData.js"></script>
     <script src="./scripts/openArticle.js"></script>
   </head>
   <body>
-    <!-- header -->
+    <!-- get script to display header -->
     <script src="scripts/headerHtml.js"></script>
 
+    <!-- create a container for all body elements (centers elements) -->
     <div class="row">
+      <!-- create title for articles section using h2 -->
       <h2 class="page-heading">Articles</h2>
+      <!-- create intro for articles section using p -->
       <p class="page-intro">
         Below you will find articles full of helpful tips and tricks regarding
         the growth and propagation of succulents. If you don't find the
@@ -37,12 +44,17 @@
         to us for publication!
       </p>
 
+      <!-- create container for article using div -->
       <div class="article">
+        <!-- display image using img -->
         <img src="./img/plant-img-6.JPG" alt="Article image" />
+        <!-- create container for article title and link -->
         <div class="title-link-container">
+          <!-- create article title using h3 -->
           <h3 class="article-title">
             Succulent Care Under the Hot African Sun
           </h3>
+          <!-- create article link using a and trigger function to open a new page on click -->
           <a
             onclick="openArticle(articles.articleOne.title, articles.articleOne.body)"
             href="#"
@@ -52,12 +64,18 @@
           </a>
         </div>
       </div>
+
+      <!-- create container for article using div -->
       <div class="article">
+        <!-- display image using img -->
         <img src="./img/plant-img-7.JPG" alt="Article image" />
+        <!-- create container for article title and link -->
         <div class="title-link-container">
+          <!-- create article title using h3 -->
           <h3 class="article-title">
             Winter Succulents to Make the Best of the Cold Rainy Season
           </h3>
+          <!-- create article link using a and trigger function to open a new page on click -->
           <a
             onclick="openArticle(articles.articleTwo.title, articles.articleTwo.body)"
             href="#"
@@ -67,53 +85,76 @@
           </a>
         </div>
       </div>
+
+      <!-- create container for article using div -->
       <div class="article">
+        <!-- display image using img -->
         <img src="./img/plant-img-8.JPG" alt="Article image" />
+        <!-- create container for article title and link -->
         <div class="title-link-container">
+          <!-- create article title using h3 -->
           <h3 class="article-title">
             This is the title of a very interesting article
           </h3>
-          <a href="#" class="inline-link article-link">
-            Read more...
-          </a>
-        </div>
-      </div>
-      <div class="article">
-        <img src="./img/plant-img-9.JPG" alt="Article image" />
-        <div class="title-link-container">
-          <h3 class="article-title">
-            This is the title of a very interesting article
-          </h3>
+          <!-- create article link using a -->
           <a href="#" class="inline-link article-link">
             Read more...
           </a>
         </div>
       </div>
 
+      <!-- create container for article using div -->
+      <div class="article">
+        <!-- display image using img -->
+        <img src="./img/plant-img-9.JPG" alt="Article image" />
+        <!-- create container for article title and link -->
+        <div class="title-link-container">
+          <!-- create article title using h3 -->
+          <h3 class="article-title">
+            This is the title of a very interesting article
+          </h3>
+          <!-- create article link using a -->
+          <a href="#" class="inline-link article-link">
+            Read more...
+          </a>
+        </div>
+      </div>
+
+      <!-- create title for videos section -->
       <h2 class="page-heading">Videos</h2>
+      <!-- create intro for videos section using p -->
       <p class="page-intro">
         A few videos that we found both helpful and informative!
       </p>
+      <!-- create container for videos -->
       <div class="videos">
+        <!-- create container for individual video (used for columns) -->
         <div class="vids-column-1">
+          <!-- display video player using iframe  -->
           <iframe
             class="youtube-vid"
             src="https://www.youtube.com/embed/DiEdoIyMHrk"
           ></iframe>
         </div>
+        <!-- create container for individual video (used for columns)  -->
         <div class="vids-column-2">
+          <!-- display video player using iframe  -->
           <iframe
             class="youtube-vid"
             src="https://www.youtube.com/embed/rcrSRTwcuDo"
           ></iframe>
         </div>
+        <!-- create container for individual video (used for columns)  -->
         <div class="vids-column-1">
+          <!-- display video player using iframe  -->
           <iframe
             class="youtube-vid"
             src="https://www.youtube.com/embed/KcGWF-7Oir4"
           ></iframe>
         </div>
+        <!-- create container for individual video (used for columns)  -->
         <div class="vids-column-2">
+          <!-- display video player using iframe  -->
           <iframe
             class="youtube-vid"
             src="https://www.youtube.com/embed/5bdQDKTpnvU"
@@ -122,7 +163,7 @@
       </div>
     </div>
 
-    <!-- Footer -->
+    <!-- get script to display footer -->
     <script src="scripts/footerHtml.js"></script>
   </body>
 </html>

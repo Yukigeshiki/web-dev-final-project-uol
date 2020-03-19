@@ -5,12 +5,14 @@
 /* BASIC SETUP */
 /* -------------------------------------------------------*/
 
+/* set global css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* set css for all elements inside the html element */
 html {
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
@@ -20,6 +22,7 @@ html {
   background-color: #f8f8f8;
 }
 
+/* set css for the footer element */
 footer {
   margin-top: 64px;
   background-color: #e6e6e6;
@@ -30,6 +33,7 @@ footer {
 /* REUSABLE COMPONENTS */
 /* -------------------------------------------------------*/
 
+/* set css container to center elements to the middle of the page and restrict their width to 1140px */
 .row {
   max-width: 1140px;
   margin: 0 auto;
@@ -38,6 +42,7 @@ footer {
 
 /* -------- HEADERS --------- */
 
+/* set css for all h1 elements */
 h1 {
   margin-top: 0;
   margin-bottom: 24px;
@@ -49,11 +54,13 @@ h1 {
   word-spacing: 4px;
 }
 
+/* set css for all h3 elements */
 h3 {
   margin-bottom: 16px;
   word-spacing: 2px;
 }
 
+/* set css for all p elements */
 p {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -63,6 +70,7 @@ p {
   word-spacing: 2px;
 }
 
+/* set css for all page headers */
 .page-heading {
   margin-top: 64px;
   margin-bottom: 24px;
@@ -74,6 +82,7 @@ p {
   word-spacing: 2px;
 }
 
+/* set css for all page intros */
 .page-intro {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -84,6 +93,7 @@ p {
   word-spacing: 2px;
 }
 
+/* set css for all inline links */
 .inline-link:link,
 .inline-link:visited {
   color: #3498db;
@@ -95,12 +105,14 @@ p {
 /* NAV */
 /* -------------------------------------------------------*/
 
+/* set css for the header element */
 header {
   min-height: 70px;
   z-index: 0;
   width: 100%;
 }
 
+/* set css for the nav element */
 nav {
   position: fixed;
   width: 100%;
@@ -109,10 +121,12 @@ nav {
   box-shadow: 0px 0px 8px 0px #000000;
 }
 
+/* set css for the nav item container */
 .nav-items {
   float: right;
 }
 
+/* set css for each nav item - make sure it displays the same after being clicked */
 .nav-item:link,
 .nav-item:visited {
   display: block;
@@ -123,12 +137,14 @@ nav {
   transition: background-color 0.2s, color 0.2s;
 }
 
+/* set css to make each nav item show when you are hovering over it */
 .nav-item:hover,
 .nav-item:active {
   color: #fff;
   background-color: #bebebe;
 }
 
+/* set css for the logo */
 .logo {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -137,18 +153,19 @@ nav {
   text-transform: uppercase;
 }
 
+/* set css to make sure the logo displays the same way after it has been clicked */
 .logo a:link,
 .logo a:visited {
   color: #555;
   text-decoration: none;
 }
 
-/* Add a black background color to the top navigation */
+/* set css for the topnav elements */
 .topnav {
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/* set css for each of the a tag items inside the topnav element */
 .topnav a {
   float: left;
   display: block;
@@ -158,37 +175,39 @@ nav {
   font-size: 90%;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
+/* set css to hide the link that will show on small screens */
 .topnav .icon {
   padding: 15px 16px;
   color: #555;
   display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
-Show the link that contains should open and close the topnav (.icon) */
+/* change when the screen is less than 925px */
 @media (max-width: 925px) {
+  /* hide all nav items except the last (the menu icon) */
   .nav-items a:not(:last-child) {
     display: none;
     font-size: 75%;
     padding: 20px 16px;
   }
+  /* change top margin */
   .home {
     margin-top: 64px;
   }
+  /* change padding and font size */
   .logo {
     padding-top: 22px;
     padding-bottom: 22px;
     font-size: 120%;
   }
+  /* place the icon correctly */
   .topnav a.icon {
     float: right;
     display: block;
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
-This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* make the menu items display vertically when the screen is smaller than 925px */
 @media (max-width: 925px) {
   .topnav.responsive {
     position: relative;
@@ -209,20 +228,24 @@ This class makes the topnav look good on small screens (display the links vertic
 /* FOOTER */
 /* -------------------------------------------------------*/
 
+/* set css for all p elements inside the footer element */
 footer p {
   margin-bottom: 0;
 }
 
+/* set css for the contact us container */
 .contact-us {
   min-width: 33%;
   padding-top: 32px;
   float: left;
 }
 
+/* set css for all h3 elements inside the contact us container */
 .contact-us h3 {
   margin-left: 8px;
 }
 
+/* set css for the follow us container */
 .follow-us {
   min-width: 30%;
   margin-top: 32px;
@@ -230,6 +253,7 @@ footer p {
   float: left;
 }
 
+/* set css for the newsletter subscription container */
 .newsletter {
   min-width: 33%;
   margin-top: 32px;
@@ -237,12 +261,14 @@ footer p {
   float: left;
 }
 
+/* set css for the copyright text */
 .copyright {
   font-size: 60%;
   text-align: center;
   padding-bottom: 10px;
 }
 
+/* set css for the social media icons */
 .icon {
   margin-top: 8px;
   margin-right: 32px;
@@ -250,6 +276,7 @@ footer p {
   height: 40px;
 }
 
+/* set css for the input field inside the newsletter form */
 .newsletter-form input[type='text'] {
   border: none;
   border-radius: 3px;
@@ -261,6 +288,7 @@ footer p {
   height: 40px;
 }
 
+/* set css for the button element inside the newsletter form */
 .newsletter-form input[type='submit'] {
   margin-top: 8px;
   border: none;
@@ -275,6 +303,7 @@ footer p {
 /* LANDING PAGE */
 /* -------------------------------------------------------*/
 
+/* set css set background image for the landing page */
 .landing {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(img/home-page.jpg);
@@ -283,6 +312,7 @@ footer p {
   height: 100vh;
 }
 
+/* set css for the landing page welcome container */
 .welcome-text-box {
   position: fixed;
   width: 68%;
@@ -291,6 +321,7 @@ footer p {
   transform: translate(-50%, -50%);
 }
 
+/* set css for the welcome p element */
 .welcome-paragraph {
   color: #fff;
 }
@@ -299,6 +330,7 @@ footer p {
 /* HOME PAGE */
 /* -------------------------------------------------------*/
 
+/* set css for the slideshow container */
 .slideshow-container {
   overflow: hidden;
   height: 550px;
@@ -306,6 +338,7 @@ footer p {
   box-shadow: 0px 0px 5px 0px #000000;
 }
 
+/* set css for each slideshow item */
 .slideshow-item {
   min-width: 100%;
   max-width: 100%;
@@ -313,16 +346,20 @@ footer p {
   object-fit: cover;
 }
 
+/* change when the screen is less than 825px */
 @media (max-width: 825px) {
+  /* change the boxshadow and container height */
   .slideshow-container {
     box-shadow: none;
     height: 350px;
   }
+  /* change the boxshadow */
   .slideshow-item {
     box-shadow: 0px 0px 5px 0px #000000;
   }
 }
 
+/* change the slideshow container height when the screen is less than 400px */
 @media (max-width: 400px) {
   .slideshow-container {
     height: 350px;
@@ -333,6 +370,7 @@ footer p {
 /* EVENTS PAGE */
 /* -------------------------------------------------------*/
 
+/* set css for the upcoming events container */
 .upcoming-events {
   margin-top: 32px;
   max-width: 70%;
@@ -341,13 +379,15 @@ footer p {
   overflow: scroll;
 }
 
-/* An event */
+/* ----- An event ----- */
 
+/* set css for individual event container */
 .event {
   margin-bottom: 72px;
   margin-left: 8px;
 }
 
+/* set css for the event image */
 .event img {
   object-fit: cover;
   width: 180px;
@@ -356,6 +396,7 @@ footer p {
   display: inline-block;
 }
 
+/* set css for the event details container */
 .event-details-container {
   max-width: 70%;
   margin-left: 32px;
@@ -363,32 +404,40 @@ footer p {
   vertical-align: top;
 }
 
+/* set css for event description */
 .description {
   margin-bottom: 16px;
 }
 
+/* set css for event times */
 .date-time {
   margin-top: 0px;
   display: inline-block;
 }
 
+/* change when the screen is less than 850px */
 @media (max-width: 850px) {
+  /* change top margin */
   .upcoming-events {
     margin-top: 8px;
   }
+  /* change width, padding, border, margin */
   .event {
     max-width: 90%;
     padding-bottom: 24px;
     margin-bottom: 40px;
     border-bottom: 1px solid #dadada;
   }
+  /* change margin, width */
   .event-details-container {
     margin-left: 0px;
     max-width: 100%;
   }
+  /* change margin */
   .description {
     margin-left: 0;
   }
+  /* change margin */
   .date-time {
     margin-left: 0;
   }
@@ -396,6 +445,7 @@ footer p {
 
 /* ----------------------- */
 
+/* set css for past events container */
 .past-events {
   margin-top: 40px;
   padding-left: 32px;
@@ -404,30 +454,37 @@ footer p {
   border-left: 1px solid #dadada;
 }
 
+/* set css for all h3 elements inside past events container */
 .past-events h3 {
   margin-bottom: 32px;
 }
 
+/* set css for all p elements inside past events container */
 .past-events p {
   margin-bottom: 32px;
   margin-left: 0;
   max-width: 85%;
 }
 
+/* set css for map link */
 .map {
   margin-left: 0;
 }
 
+/* change when the screen is less than 500px */
 @media (max-width: 500px) {
+  /* change width */
   .upcoming-events {
     max-width: 100%;
   }
+  /* change margin, width, border, padding */
   .past-events {
     margin-top: 16px;
     max-width: 100%;
     border-left: none;
     padding-left: 8px;
   }
+  /* change width */
   .past-events p {
     max-width: 90%;
   }
@@ -437,6 +494,7 @@ footer p {
 /* LEARN PAGE */
 /* -------------------------------------------------------*/
 
+/* set css for article container */
 .article {
   margin-top: 64px;
   margin-left: 8px;
@@ -445,7 +503,7 @@ footer p {
   border-bottom: 1px solid #dadada;
 }
 
-/* this img css could be combined with event img */
+/* set css for img element inside article container */
 .article img {
   object-fit: cover;
   width: 140px;
@@ -453,53 +511,56 @@ footer p {
   display: inline-block;
 }
 
+/* set css for the container holding the title and link */
 .title-link-container {
   margin-left: 32px;
   display: inline-block;
   vertical-align: top;
 }
 
+/* set css for the article title */
 .article-title {
   margin-left: 8px;
 }
 
+/* set css for the article link */
 .article-link {
   margin-top: 64px;
   margin-left: 8px;
 }
 
 @media (max-width: 650px) {
+  /* change margin */
   .title-link-container {
     margin-top: 32px;
     margin-left: 0;
   }
+  /* change margin */
   .title-link-container h3,
   .title-link-container a {
     margin-left: 0;
   }
 }
 
+/* set css for video column 1 */
 .vids-column-1 {
   margin-left: 8px;
   min-width: 50%;
   float: left;
 }
 
+/* set css for video column 2 */
 .vids-column-2 {
   margin-left: 8px;
   max-width: 50%;
   float: left;
 }
 
+/* set css for each individual video */
 .youtube-vid {
   margin: 24px 0;
   width: 420px;
   height: 315px;
-}
-
-/* -------- ICONS --------- */
-ion-icon {
-  color: #555;
 }
 
 /* -------------------------------------------------------*/
@@ -507,12 +568,15 @@ ion-icon {
 /* -------------------------------------------------------*/
 
 /* <!-- credit to https://codepen.io/colorlib/pen/rxddKy for login and register forms --> */
+
+/* set css for login page container */
 .login-page {
   width: 35%;
   padding: 8% 0 0;
   margin: auto;
 }
 
+/* set css for the login form */
 .form {
   position: relative;
   z-index: 1;
@@ -525,6 +589,7 @@ ion-icon {
   border-radius: 3px;
 }
 
+/* set css for the login form input fields */
 .form input {
   font-family: 'Lato', 'Arial', sans-serif;
   outline: 0;
@@ -538,6 +603,7 @@ ion-icon {
   border-radius: 2px;
 }
 
+/* set css for the form button */
 .form button {
   font-family: 'Lato', 'Arial', sans-serif;
   text-transform: uppercase;
@@ -554,123 +620,35 @@ ion-icon {
   border-radius: 2px;
 }
 
+/* set css for the the form button when hover, active, focus */
 .form button:hover,
 .form button:active,
 .form button:focus {
   background: #43a047;
 }
+/* set css for message inside login form */
 .form .message {
   margin: 15px 0 0;
   color: #b3b3b3;
   font-size: 12px;
 }
+/* set css for the a element inside the message */
 .form .message a {
   color: #4caf50;
   text-decoration: none;
 }
 
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
-}
-.container:before,
-.container:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.container .info {
-  margin: 50px auto;
-  text-align: center;
-}
-.container .info h1 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: #1a1a1a;
-}
-.container .info span {
-  color: #4d4d4d;
-  font-size: 12px;
-}
-
-.container .info span a {
-  color: #000000;
-  text-decoration: none;
-}
-.container .info span .fa {
-  color: #ef3b3a;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+/* change when the screen is less than 800px */
 @media (max-width: 800px) {
+  /* change width */
   .login-page {
     width: 50%;
   }
 }
+/* change when the screen is less than 600px */
 @media (max-width: 600px) {
+  /* change width */
   .login-page {
     width: 70%;
   }
 }
-
-/* header {
-  min-height: 70px;
-  z-index: 0;
-  width: 100%;
-}
-
-nav {
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #555;
-  box-shadow: 0px 0px 8px 0px #000000;
-}
-
-nav ul {
-  float: right;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav li a:link,
-nav li a:visited {
-  display: block;
-  color: #555;
-  padding: 24px 40px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 90%;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-nav li a:hover,
-nav li a:active {
-  color: #fff;
-  background-color: #bebebe;
-}
-
-.logo {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 8px;
-  float: left;
-  text-transform: uppercase;
-}
-
-.logo a:link,
-.logo a:visited {
-  color: #555;
-  text-decoration: none;
-} */

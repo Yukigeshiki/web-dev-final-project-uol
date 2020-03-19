@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<!-- declare language in html tag -->
 <html lang="en">
   <head>
+    <!-- declare page title -->
     <title>Signup</title>
+    <!-- declare meta fields -->
     <meta
       name="decription"
       content="This website is dedicated to Odd Plant Succulents and the discussion of succulent plants"
@@ -14,6 +17,7 @@
       name="keywords"
       content="'succulent plants' plants 'plant propagation' 'odd plant succulents'"
     />
+    <!-- declare links -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap"
@@ -21,18 +25,27 @@
     />
   </head>
   <body>
-    <!-- header -->
+    <!-- get script to display header -->
     <script src="scripts/headerHtml.js"></script>
 
-    <!-- credit to https://codepen.io/colorlib/pen/rxddKy for the register form -->
+    <!-- create a container for all body elements (centers elements) -->
     <div class="row">
+      <!-- credit to https://codepen.io/colorlib/pen/rxddKy for the register form -->
+      <!-- create container for register elements using div -->
       <div class="login-page">
+        <!-- create container for register form using div -->
         <div class="form">
+          <!-- create a register form using form -->
           <form class="register-form">
+            <!-- create input for name using input -->
             <input type="text" placeholder="name" />
+            <!-- create input for email using input -->
             <input type="text" placeholder="email" />
+            <!-- create input for password using input -->
             <input type="password" placeholder="password" />
+            <!-- create button to register using button -->
             <button>create</button>
+            <!-- create sign in message using p and link using a -->
             <p class="message">
               Already registered? <a href="./login.html">Sign In</a>
             </p>

@@ -23,6 +23,8 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap"
       rel="stylesheet"
     />
+    <!-- get script with login functions -->
+    <script src="./scripts/login.js"></script>
   </head>
   <body>
     <!-- get script to display header -->
@@ -42,7 +44,9 @@
             <!-- create input for password using input -->
             <input type="password" placeholder="password" />
             <!-- create button to login using button -->
-            <button>login</button>
+            <button onclick="onLogin()" type="button">
+              login
+            </button>
             <!-- create not registered message using p and link using a -->
             <p class="message">
               Not registered? <a href="./signup.html">Create an account</a>

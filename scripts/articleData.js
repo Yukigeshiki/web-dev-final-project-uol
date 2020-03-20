@@ -1,5 +1,5 @@
 // this is an object containing data to two articles
-articles = {
+var articles = {
   articleOne: {
     title: 'Succulent Care Under the Hot African Sun',
     body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

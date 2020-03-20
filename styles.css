@@ -182,6 +182,11 @@ nav {
   display: none;
 }
 
+/* set css to hide logout until login is clicked */
+#logout {
+  display: none;
+}
+
 /* change when the screen is less than 925px */
 @media (max-width: 925px) {
   /* hide all nav items except the last (the menu icon) */

@@ -1,5 +1,8 @@
 // html header code heavily inspired by w3school
 document.write(`
+    <!-- get script with login functions -->
+    <script src="./scripts/login.js"></script>
+
     <!-- create page header using header --> 
     <header>
     <!-- create page top nav bar using nav -->
@@ -15,7 +18,9 @@ document.write(`
           <a href="home.html" class="nav-item home">Home</a>
           <a href="events.html" class="nav-item">Events</a>
           <a href="learn.html" class="nav-item">Learn</a>
-          <a href="login.html" class="nav-item">Login</a>
+          <a href="login.html" class="nav-item" id="login">Login</a>
+          <!-- logout is hidden until login is clicked -->
+          <a href="javascript:void(0);" class="nav-item" id="logout" onClick="onLogout()">Logout</a>
           <!-- create menu icon and set dropDown to trigger onlick using a -->
           <a href="javascript:void(0);" class="icon" onclick="dropDown()"
             >&#9776;</a

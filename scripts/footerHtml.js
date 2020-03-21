@@ -39,6 +39,7 @@ document.write(`
             <img
               class="icon"
               src="https://img.icons8.com/material-outlined/48/000000/instagram-new.png"
+              alt="Instagram icon"
             />
           </a>
           <!-- create a link to facebook using a -->
@@ -52,6 +53,7 @@ document.write(`
             <img
               class="icon"
               src="https://img.icons8.com/material-outlined/48/000000/facebook-new.png"
+              alt="Facebook icon"
             />
           </a>
           <!-- create link to twitter -->
@@ -65,6 +67,7 @@ document.write(`
             <img
               class="icon"
               src="https://img.icons8.com/android/96/000000/twitter.png"
+              alt="Twitter icon"
             />
           </a>
         </div>

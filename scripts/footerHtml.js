@@ -1,3 +1,4 @@
+/* Javascript code to write the footer html to a page */
 document.write(`
     <!-- create footer using footer tag -->
     <footer>

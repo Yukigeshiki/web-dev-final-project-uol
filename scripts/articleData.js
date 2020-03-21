@@ -1,4 +1,4 @@
-// this is an object containing data to two articles
+// this is an object containing data for two articles
 var articles = {
   articleOne: {
     title: 'Succulent Care Under the Hot African Sun',

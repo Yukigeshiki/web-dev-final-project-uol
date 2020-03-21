@@ -1,4 +1,5 @@
 // html header code heavily inspired by w3school
+/* Javascript code to write the header html to a page */
 document.write(`
     <!-- get script with login functions -->
     <script src="./scripts/login.js"></script>

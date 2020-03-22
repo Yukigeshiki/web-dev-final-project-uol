@@ -1,6 +1,7 @@
 /* General styling */
 
-/* Credit to Udemy: Build Responsive Real World Websites with HTML and CSS3 (Jonas Schmedtmann) for help with CSS */
+/* Credit to Udemy: Build Responsive Real World Websites with HTML and CSS3 (Jonas Schmedtmann) for help with BASIC SETUP section of CSS */
+/* Appendix 1 on report page */
 /* -------------------------------------------------------*/
 /* BASIC SETUP */
 /* -------------------------------------------------------*/
@@ -101,6 +102,7 @@ p {
 }
 
 /* credit to w3school for help with nav */
+/* Appendix 2 on report page */
 /* -------------------------------------------------------*/
 /* NAV */
 /* -------------------------------------------------------*/
@@ -573,6 +575,7 @@ footer p {
 /* -------------------------------------------------------*/
 
 /* <!-- credit to https://codepen.io/colorlib/pen/rxddKy for login and register forms --> */
+/* Appendix 4 on report page */
 
 /* set css for login page container */
 .login-page {
@@ -656,4 +659,22 @@ footer p {
   .login-page {
     width: 70%;
   }
+}
+
+/* -------------------------------------------------------*/
+/* REPORT */
+/* -------------------------------------------------------*/
+
+.report-title {
+  margin: 32px 0;
+}
+
+.report-paragraph {
+  margin-left: 0;
+}
+
+.row ol li {
+  margin: 8px 0 24px 0;
+  display: list-item;
+  list-style-position: inside;
 }

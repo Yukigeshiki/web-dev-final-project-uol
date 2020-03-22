@@ -1,4 +1,8 @@
 //This code was heavily inspired from this w3schools article: https://www.w3schools.com/howto/howto_js_slideshow.asp
+//Appendix 3 on report page
+
+//Removed all extras (bottom dots, ability to click through slides),
+//just kept the automatic changing of slides for a simple look
 
 // declare and assign slideIndex variable, and call slideshowSlides function
 var slideIndex = 0;

@@ -1,4 +1,5 @@
 /** credit to w3school for this javascript code */
+/** Appendix 2 in report page */
 function dropDown() {
   // get the element with ID myTopNav
   var x = document.getElementById('myTopnav');
